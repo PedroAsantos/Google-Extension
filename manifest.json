@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Full Window Youtube Player",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"] ,
+      "js": ["jquery-2.1.4.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
